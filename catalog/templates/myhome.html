@@ -1,0 +1,21 @@
+{% include 'nav.html' %}
+<div class="main">
+{% block content %}
+  <!-- {% for tb in tbs_cat %}
+    <a href="{{ url_for('showCars',crid=cr.id)}}">{{cr.name}}</a><br>
+    {% endfor %} -->
+    {% with messages = get_flashed_messages() %}
+	    {% if messages %}
+	        
+	    {% endif %}
+	{% endwith %}
+
+	<div class="text-center" >
+		
+		<h1 style="font-family:Bradley Hand ITC;border-top:10px; color:#ff0080;"> <b>Welcome to Cars Garage</b> </h1>
+		<img style="width: 1030px; height: 480px; text-align: top; margin: 0; padding: 0; margin-top: 50px border-top:50px;" src="http://s1.1zoom.me/big0/870/McLaren_2018_Senna_Gray_background_Light_Blue_542260_1280x897.jpg">
+	</div>
+
+    
+{% endblock content %}
+</div>
